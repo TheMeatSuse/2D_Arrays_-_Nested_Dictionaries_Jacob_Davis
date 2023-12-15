@@ -1,0 +1,67 @@
+# 2D Arrays & Nested Dictionaries |Jacob Davis | Dec 4th, 2023
+# This program creates two nested dictionaries to hold information about characters
+
+"""Creates a nested array to hold characters, description, items & locations"""
+
+people = {'Walter' : { 'full name' : 'Walter White',
+                       'descript': 'He is a chemistry teacher',
+                       'locat': '308 Negra Arroyo Lane'},
+          
+         'Lydia' : {'full name': 'Lydia Rodarte',
+                    'descript': 'She manages the supply of methylamine',
+                    'locat': 'Madrigal Electromotive'},
+          
+         'Mike' : {'full name': 'Mike Ehrmantraut',
+                   'descript': 'He is a retired detective',
+                   'locat': 'The Laundromat'},
+          
+         'Gus Inventory' : {'full name': 'Gus Fring',
+                  'descript': 'He is a businessman',
+                  'locat': 'Los Pollos Hermanos'} }
+
+items = {'Walter Inventory' : { 'item_1' : 'Ricin',
+                       'item_descript_1' : 'A powerful poison',
+                       'item_2': 'chemistry set',
+                       'item_descript_2': 'this is used to brew chemical concoctions'},
+          
+         'Lydia Inventory' : {'item_1': 'tea with stevia',
+                    'item_descript_1': 'clams the nerves in tense situations',
+                    'item_2': 'barrel of methylamine',
+                    'item_descript_2': 'useful ingredient for The Product'},
+          
+         'Mike Inventory' : {'item_1': 'Pimento Cheese sandwich',
+                   'item_descript_1': 'damn delicious',
+                   'item_2': 'gun',
+                   'item_descript_2': 'good at taking out the competition'},
+          
+         'Gus Inventory' : {'item_1': 'briefcase of money',
+                  'item_descript_1': 'good to paying off people',
+                  'item_2': 'Bucket of batter',
+                  'item_descript_2': 'used to smuggle goods'} }
+
+
+"""Creates a loop to print of the character's name, description and location"""
+
+for name, name_info in people.items(): #This loop will run for every item in the people dictionary
+    full_name = f"{name_info['full name']}" #
+    descriptions = f"{name_info['descript']}"
+    location = f"{name_info['locat']}"
+    
+    print(f"\n{name.title()}:") #Prints the title of each dictionary
+    print(f"\tCharacter Full Name: {full_name.title()}") #Prints the character's full name
+    print(f"\tDescription: {descriptions.title()}") #Prints the character's description
+    print(f"\tThey Can Be Found At: {location.title()}") #Prints where the character can be found
+    
+"""Creates a loop to print of the character's items and descriptions"""
+    
+for item, item_info in items.items(): #This loop will run for every item in the item dictionary
+    item_1 = f"{item_info['item_1']}"
+    item_description_1 = f"{item_info['item_descript_1']}"
+    item_2 = f"{item_info['item_2']}"
+    item_description_2 = f"{item_info['item_descript_2']}"
+    
+    print(f"\n{item.title()}:") #Prints the title of each dictionary
+    print(f"\tItem 1: {item_1.title()}") #Prints the character's first item
+    print(f"\tItem 1's description: {item_description_1.title()}") #Prints the characters first item's description
+    print(f"\tItem 2: {item_2.title()}") #Prints the characters's second item
+    print(f"\tItem 2's description: {item_description_2.title()}") #Prints the characters second item's description
