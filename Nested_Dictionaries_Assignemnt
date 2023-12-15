@@ -63,5 +63,5 @@ for item, item_info in items.items(): #This loop will run for every item in the 
     print(f"\n{item.title()}:") #Prints the title of each dictionary
     print(f"\tItem 1: {item_1.title()}") #Prints the character's first item
     print(f"\tItem 1's description: {item_description_1.title()}") #Prints the characters first item's description
-    print(f"\tItem 2: {item_2.title()}") #Prints the characters's second item
+    print(f"\tItem 2: {item_2.title()}") #Prints the character's second item
     print(f"\tItem 2's description: {item_description_2.title()}") #Prints the characters second item's description
